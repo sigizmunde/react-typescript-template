@@ -19,10 +19,11 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "lint": "npx eslint src/**/*.{js,jsx,ts,tsx,html}",
-    "lint:fix": "npx eslint src/**/*.{js,jsx,ts,tsx,html} --fix",
-    "format:check": "npx prettier --check src/**/*.{js,jsx,ts,tsx,json,html}",
-    "format:write": "npx prettier --write src/**/*.{js,jsx,ts,tsx,json,html}"
+    "lint": "npx eslint \"src/**/*.{js,jsx,ts,tsx,html}\"",
+    "lint:fix": "npx eslint \"src/**/*.{js,jsx,ts,tsx,html}\" --fix",
+    "format:check": "npx prettier --check \"src/**/*.{js,jsx,ts,tsx,json,html}\"",
+    "format:write": "npx prettier --write \"src/**/*.{js,jsx,ts,tsx,json,html}\"",
+    "prepare": "husky install"
   },
   "browserslist": {
     "production": [
@@ -47,6 +48,7 @@
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-react": "^7.31.11",
     "eslint-plugin-react-hooks": "^4.6.0",
-    "prettier": "2.8.1"
+    "prettier": "2.8.1",
+    "husky": "^8.0.0"
   }
 }
